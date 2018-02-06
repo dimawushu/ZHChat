@@ -28,10 +28,10 @@
 {
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
-    CGFloat cornerRadius = 6.0f;
+    CGFloat cornerRadius = 0;
     
     self.backgroundColor = [UIColor whiteColor];
-    self.layer.borderWidth = 0.5f;
+    self.layer.borderWidth = 0;
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.layer.cornerRadius = cornerRadius;
     

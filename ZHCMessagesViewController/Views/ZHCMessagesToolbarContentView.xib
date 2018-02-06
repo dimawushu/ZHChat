@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,12 +16,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJP-Cy-tqp" customClass="ZHCMessagesComposerTextView">
-                    <rect key="frame" x="51" y="5" width="175" height="34"/>
+                    <rect key="frame" x="5" y="1" width="310" height="42"/>
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckC-xA-7HE">
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckC-xA-7HE">
                     <rect key="frame" x="277" y="4.5" width="35" height="35"/>
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -29,7 +29,7 @@
                         <constraint firstAttribute="width" constant="35" id="lYR-KK-YAj"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-tC-y9x">
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3K6-tC-y9x">
                     <rect key="frame" x="8" y="4.5" width="35" height="35"/>
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -37,7 +37,7 @@
                         <constraint firstAttribute="height" constant="35" id="a9Y-i5-ZAC"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHo-qd-XdV">
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHo-qd-XdV">
                     <rect key="frame" x="234" y="5" width="35" height="35"/>
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -46,18 +46,18 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="wJP-Cy-tqp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2LD-hS-74a"/>
                 <constraint firstItem="ckC-xA-7HE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="44X-ev-hkH"/>
+                <constraint firstAttribute="trailing" secondItem="wJP-Cy-tqp" secondAttribute="trailing" constant="5" id="6LL-aZ-xrT"/>
+                <constraint firstItem="wJP-Cy-tqp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="ARa-F1-asa"/>
                 <constraint firstItem="3K6-tC-y9x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="By2-4Z-b0k"/>
                 <constraint firstAttribute="trailing" secondItem="ckC-xA-7HE" secondAttribute="trailing" constant="8" id="JXo-JG-Lsl"/>
                 <constraint firstItem="3K6-tC-y9x" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jt2-2Z-UBk"/>
                 <constraint firstItem="ckC-xA-7HE" firstAttribute="leading" secondItem="iHo-qd-XdV" secondAttribute="trailing" constant="8" id="Kfp-IT-vQW"/>
-                <constraint firstAttribute="bottom" secondItem="wJP-Cy-tqp" secondAttribute="bottom" constant="5" id="PyI-Kz-7eQ"/>
-                <constraint firstItem="iHo-qd-XdV" firstAttribute="leading" secondItem="wJP-Cy-tqp" secondAttribute="trailing" constant="8" id="Z6E-Lo-NOi"/>
-                <constraint firstItem="wJP-Cy-tqp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="gXM-ls-1oU"/>
-                <constraint firstItem="wJP-Cy-tqp" firstAttribute="leading" secondItem="3K6-tC-y9x" secondAttribute="trailing" constant="8" id="uaK-jr-kIq"/>
+                <constraint firstAttribute="bottom" secondItem="wJP-Cy-tqp" secondAttribute="bottom" constant="1" id="PyI-Kz-7eQ"/>
+                <constraint firstItem="wJP-Cy-tqp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="gXM-ls-1oU"/>
                 <constraint firstItem="iHo-qd-XdV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zXz-WT-1B5"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
