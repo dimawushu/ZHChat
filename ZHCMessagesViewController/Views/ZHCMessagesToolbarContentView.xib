@@ -16,15 +16,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHo-qd-XdV">
-                    <rect key="frame" x="234" y="5" width="35" height="35"/>
+                    <rect key="frame" x="282" y="5" width="36" height="35"/>
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="35" id="UnP-KQ-qqV"/>
                         <constraint firstAttribute="height" constant="35" id="g1w-5g-xU1"/>
                     </constraints>
                 </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJP-Cy-tqp" customClass="ZHCMessagesComposerTextView">
-                    <rect key="frame" x="5" y="1" width="310" height="42"/>
+                    <rect key="frame" x="5" y="1" width="275" height="42"/>
                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -50,14 +49,15 @@
             <constraints>
                 <constraint firstItem="wJP-Cy-tqp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2LD-hS-74a"/>
                 <constraint firstItem="ckC-xA-7HE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="44X-ev-hkH"/>
-                <constraint firstAttribute="trailing" secondItem="wJP-Cy-tqp" secondAttribute="trailing" constant="5" id="6LL-aZ-xrT"/>
+                <constraint firstAttribute="trailing" secondItem="wJP-Cy-tqp" secondAttribute="trailing" constant="40" id="6LL-aZ-xrT"/>
                 <constraint firstItem="wJP-Cy-tqp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="ARa-F1-asa"/>
                 <constraint firstItem="3K6-tC-y9x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="By2-4Z-b0k"/>
                 <constraint firstAttribute="trailing" secondItem="ckC-xA-7HE" secondAttribute="trailing" constant="8" id="JXo-JG-Lsl"/>
                 <constraint firstItem="3K6-tC-y9x" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jt2-2Z-UBk"/>
-                <constraint firstItem="ckC-xA-7HE" firstAttribute="leading" secondItem="iHo-qd-XdV" secondAttribute="trailing" constant="8" id="Kfp-IT-vQW"/>
                 <constraint firstAttribute="bottom" secondItem="wJP-Cy-tqp" secondAttribute="bottom" constant="1" id="PyI-Kz-7eQ"/>
                 <constraint firstItem="wJP-Cy-tqp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="gXM-ls-1oU"/>
+                <constraint firstItem="iHo-qd-XdV" firstAttribute="leading" secondItem="wJP-Cy-tqp" secondAttribute="trailing" constant="2" id="jCE-Ty-HGv"/>
+                <constraint firstAttribute="trailing" secondItem="iHo-qd-XdV" secondAttribute="trailing" constant="2" id="wWt-hN-hvp"/>
                 <constraint firstItem="iHo-qd-XdV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zXz-WT-1B5"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -67,8 +67,6 @@
                 <outlet property="leftBarButtonContainerViewWidthConstraint" destination="UCB-B7-9Gg" id="0aD-Ne-asm"/>
                 <outlet property="leftHorizontalSpacingConstraint" destination="By2-4Z-b0k" id="onk-p4-rev"/>
                 <outlet property="middleBarButtonContainerView" destination="iHo-qd-XdV" id="1dt-yP-2hs"/>
-                <outlet property="middleBarButtonContainerViewWidthConstraint" destination="UnP-KQ-qqV" id="Mmr-R3-Jmn"/>
-                <outlet property="middleHorizontalSpacingConstraint" destination="Kfp-IT-vQW" id="RXB-Th-nfg"/>
                 <outlet property="rightBarButtonContainerView" destination="ckC-xA-7HE" id="Bc6-8S-MKM"/>
                 <outlet property="rightBarButtonContainerViewWidthConstraint" destination="lYR-KK-YAj" id="MQE-0j-MUi"/>
                 <outlet property="rightHorizontalSpacingConstraint" destination="JXo-JG-Lsl" id="N7A-dB-y3D"/>
